@@ -12,4 +12,7 @@ window.location.href = "https://api.whatsapp.com/send?phone=" + phone;
 })();
 ```
 
-If you want you can replace the phone number with your own number, so you can send yourself messages easily.  Why would you want to send yourself a message?  Maybe you like talking to yourself. :-)
+If you want you can replace the phone number with your own number, so you can send yourself messages easily.  Why would you want to send yourself a message?  Maybe you like talking to yourself. Maybe you want to paste on one device and copy on another one.  :-)
+
+Hat tip to [iDB](https://www.idownloadblog.com/2022/05/26/how-to-message-on-whatsapp-without-saving-contact/) for this code and idea.  I added the ``.replace(/\D/g,'')`` because I wanted to make it more robust, you can paste numbers like ``1-650-555-1234`` or ``1(618)555-1234` and it will strip out all the non-digits before sending it to the WhatsApp API.  
+
